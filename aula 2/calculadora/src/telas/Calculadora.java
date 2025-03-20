@@ -57,46 +57,140 @@ public class Calculadora {
 		});
 		this.btn8.setBounds   ( 60, 55, 50, 50);
 		this.btn8.setFont(fonte);
+		this.btn8.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "8");
+			}
+		});
+		
 		this.btn9.setBounds   (115, 55, 50, 50);
 		this.btn9.setFont(fonte);
+		this.btn9.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "9");
+			}
+		});
 		this.btnSoma.setBounds(170,55, 50, 50);
 		this.btnSoma.setFont(fonte);
+		this.btnSoma.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "+");
+			}
+		});
 		
 		this.btn4.setBounds   (  5, 110, 50, 50);
 		this.btn4.setFont(fonte);
+		this.btn4.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "4");
+			}
+		});
 		this.btn5.setBounds   ( 60, 110, 50, 50);
 		this.btn5.setFont(fonte);
+		this.btn5.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "5");
+			}
+		});
+		
 		this.btn6.setBounds   (115, 110, 50, 50);
 		this.btn6.setFont(fonte);
+		this.btn6.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "6");
+			}
+		});
+		
 		this.btnSub.setBounds(170, 110, 50, 50);
 		this.btnSub.setFont(fonte);
+		this.btnSub.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "-");
+			}
+		});
 		
 		this.btn1.setBounds   (  5, 165, 50, 50);
 		this.btn1.setFont(fonte);
+		this.btn1.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "1");
+			}
+		});
+		
 		this.btn2.setBounds   ( 60, 165, 50, 50);
 		this.btn2.setFont(fonte);
+		this.btn2.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "2");
+			}
+		});
+		
 		this.btn3.setBounds   (115, 165, 50, 50);
 		this.btn3.setFont(fonte);
+		this.btn3.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "3");
+			}
+		});
+		
 		this.btnMult.setBounds(170, 165, 50, 50);
 		this.btnSub.setFont(fonte);
+		this.btnMult.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "*");
+			}
+		});
 		
-		this.btn1.setBounds   (  5, 165, 50, 50);
-		this.btn1.setFont(fonte);
-		this.btn2.setBounds   ( 60, 165, 50, 50);
-		this.btn2.setFont(fonte);
-		this.btn3.setBounds   (115, 165, 50, 50);
-		this.btn3.setFont(fonte);
-		this.btnMult.setBounds(170, 165, 50, 50);
-		this.btnSub.setFont(fonte);
-		
+
 		this.btnPonto.setBounds   	(  5, 220, 50, 50);
 		this.btnPonto.setFont(fonte);
+		this.btnPonto.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + ".");
+			}
+		});
+		
+		
 		this.btn0.setBounds   		( 60, 220, 50, 50);
 		this.btn0.setFont(fonte);
+		this.btn0.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "0");
+			}
+		});
+		
 		this.btnInvert.setBounds   	(115, 220, 50, 50);
 		this.btnInvert.setFont(fonte2);
+		this.btnInvert.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "+/-");
+			}
+		});
+		
+		
 		this.btnIgual.setBounds		(170, 220, 50, 50);
 		this.btnIgual.setFont(fonte);
+		this.btnIgual.addActionListener(new ActionListener() {	
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				display.setText(display.getText() + "=");
+			}
+		});
+		
 		
 		this.janela.add(display);
 		this.janela.add(btn7);
